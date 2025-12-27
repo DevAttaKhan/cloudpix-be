@@ -19,7 +19,8 @@
     "paths": {
       "@src/*": ["src/*"]
     },
-    "useUnknownInCatchVariables": false
+    "useUnknownInCatchVariables": false,
+    "types": ["vitest/globals"]
   },
   "ts-node": {
     "swc": true,

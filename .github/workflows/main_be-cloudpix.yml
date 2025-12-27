@@ -23,6 +23,10 @@ jobs:
         with:
           node-version: '24.x'
 
+      - name: Install dependencies (including devDependencies for build)
+        # Install all dependencies including devDependencies (needed for ts-node, typescript, etc.)
+        run: npm ci
+
       - name: npm install, build, and test
         env:
           NODE_ENV: production
